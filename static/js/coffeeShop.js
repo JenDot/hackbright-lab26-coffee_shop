@@ -38,4 +38,7 @@ const setProgressAndStatus = (progressVal, statusMsg) => {
 //
 // Add your event handlers below.
 //
-const button = $('#add-to-order').on('click', )
+const button = $('.add-to-order').on('click', () => {
+  addItemToCart('Coffee');
+  incrementCartTotal('1.50');
+})
